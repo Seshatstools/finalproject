@@ -20,16 +20,19 @@
                 <img src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt ="Treact Logo">
                 <div class="nav__logo--title">Treact</div>
                 </div>
-                    <ul>
+                <div class="nav__menu">
+                    <ul class="nav__links">
                         <li class="nav__link"><a href="#">About</a></li>
                         <li class="nav__link"><a href="#features">Blog</a></li>
                         <li class="nav__link"><a href="#pricing">Pricing</a></li>
                         <li class="nav__link"><a href="#start">Contact Us</a></li>
+                    </ul>
+                    <div class="nav__links">
                         <li class="nav__link"><a href="#Login">Login</a></li>
                         <li class="nav__link nav__link--primary">Sign Up</li>
-                    </ul>
-                <button class="btn__menu" onclick="openMenu()">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    </div>
+                    <button class="btn__menu" onclick="openMenu()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="btn__menu--svg">
                         <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -38,7 +41,9 @@
                     </svg>
                 </button>
             </div>
+            </div>
         </nav>
+
         <div class="modal">
             <button class="btn__menu btn__menu--close" onclick="closeMenu()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -49,43 +54,158 @@
                 </svg>
             </button>
             <div class="modal__links">
-                <a class="modal__link">About</a>
-                <a class="modal__link">Blog</a>
-                <a class="modal__link">Pricing</a>
-                <a class="modal__link">Contact Us</a>
-                <a class="modal__link">Login</a>
-                <a class="modal__link modal__link--primary">Sign Up</a>
+                <a class="modal__link"><a href="#" onclick="closeMenu()">About</a></a>
+                <a class="modal__link"><a href="#features" onclick="closeMenu()">Blog</a></a>
+                <a class="modal__link"><a href="#pricing" onclick="closeMenu()">Pricing</a></a>
+                <a class="modal__link"><a href="#start" onclick="closeMenu()">Contact Us</a></a>
+                <a class="modal__link"><a href="#Login" onclick="closeMenu()">Login</a></a>
+                <a class="modal__link modal__link--primary" onclick="closeMenu()">Sign Up</a>
             </div>
         </div>
+
         <header>
             <div class="container">
                 <div class="row">
-                <h1 class="header__title">
-                Beautiful React Templates <span class="purple">for you.</span>
-                </h1>
-                <div>
-                    <p class="header__subtitle">
-                        Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.
-                    </p>
+                    <div class="header__flex">
+                        <div class=".header__flex--left-container">
+                            <h1 class="header__description">
+                                Beautiful React Templates <span class="purple">for you.</span>
+                            </h1>
+                            <p class="header__description--para">
+                                Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.
+                            </p>
+                            <div class="header__email">
+                                <input type="text" class="header__email--input" placeholder="Your E-mail Address"> == $0
+                                <button class="header__email--btn">Get Started</button> 
+                            </div>
+                            <p class="header__description--trusted">OUR TRUSTED CUSTOMERS</p>
+                                <img class="header__img--trusted" src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="">
+                        </div>
+                        <div class="header__flex--right-container">
+                            <div class="header__img--container">
+                                <img class="header__img" src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
     </section>
-    <main>
+        
+        <main>
         <section id="features">
             <div class="container">
                 <div class="row__narrow">
-                    <!--  -->Enter Features Section<!--  -->
+
+                    <header class="features__header">
+                        <h4 class="section__tag"><span class="purple">FEATURES</span></h4>
+                        <h2 class="section__title">
+                            We Have Amazing <span class="purple">Service.</span></h2>
+                        <div class="section__para">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel rem, dolore aperiam omnis voluptatem consequatur quo distinctio earum dolor, explicabo reiciendis rerum veniam unde accusamus neque soluta eaque voluptates autem?</p>
+                        </div>
+                    </header>
+
+                    <div class="features">
+
+                        <div class="feature">
+                            <div class="feature__row">
+                                <figure class="feature__img--wrapper">
+                                    <img src="./assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt="" class="feature__img">
+                                </figure>
+                                <div class="feature__text">
+                                    <h2 class="feature__title">Secure</h2>
+                                    <p class="feature__para">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam ea corporis harum voluptatem, quas maxime.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feature">
+                            <div class="feature__row">
+                                <figure class="feature__img--wrapper">
+                                    <img src="./assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg" alt="" class="feature__img">
+                                </figure>
+                                <div class="feature__text">
+                                    <h2 class="feature__title">24/7 Support</h2>
+                                    <p class="feature__para">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam ea corporis harum voluptatem, quas maxime.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feature">
+                            <div class="feature__row">
+                                <figure class="feature__img--wrapper">
+                                    <img src="./assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg" alt="" class="feature__img">
+                                </figure>
+                                <div class="feature__text">
+                                    <h2 class="feature__title">Customizable</h2>
+                                    <p class="feature__para">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam ea corporis harum voluptatem, quas maxime.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feature">
+                            <div class="feature__row">
+                                <figure class="feature__img--wrapper">
+                                    <img src="./assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg" alt="" class="feature__img">
+                                </figure>
+                                <div class="feature__text">
+                                    <h2 class="feature__title">Reliable</h2>
+                                    <p class="feature__para">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam ea corporis harum voluptatem, quas maxime.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feature">
+                            <div class="feature__row">
+                                <figure class="feature__img--wrapper">
+                                    <img src="./assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg" alt="" class="feature__img">
+                                </figure>
+                                <div class="feature__text">
+                                    <h2 class="feature__title">Fast</h2>
+                                    <p class="feature__para">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam ea corporis harum voluptatem, quas maxime.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feature">
+                            <div class="feature__row">
+                                <figure class="feature__img--wrapper">
+                                    <img src="./assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg" alt="" class="feature__img">
+                                </figure>
+                                <div class="feature__text">
+                                    <h2 class="feature__title">Easy</h2>
+                                    <p class="feature__para">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam ea corporis harum voluptatem, quas maxime.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>
+
         <section id="quality">
             <div class="container">
                 <div class="row">
-                    <!--  -->Enter Quality Work Section<!--  -->
+                    <!--  -->Enter Quality Section<!--  -->
                 </div>
             </div>
         </section>
+
+
         <section id="steps">
             <div class="container">
                 <div class="row">
@@ -93,6 +213,8 @@
                 </div>
             </div>
         </section>
+
+
         <section id="values">
             <div class="container">
                 <div class="row">
@@ -100,6 +222,8 @@
                 </div>
             </div>
         </section>
+
+
         <section id="pricing">
             <div class="container">
                 <div class="row">
@@ -107,6 +231,8 @@
                 </div>
             </div>
         </section>
+
+
         <section id="testimonials">
             <div class="container">
                 <div class="row">
@@ -114,6 +240,8 @@
                 </div>
             </div>
         </section>
+
+
         <section id="start">
             <div class="container">
                 <div class="row">
@@ -121,7 +249,9 @@
                 </div>
             </div>
         </section>
+
     </main>
+
     <footer>
         <div class="row footer__row">
             <!--  -->Enter Footer<!--  -->
