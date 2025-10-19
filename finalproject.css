@@ -268,6 +268,13 @@ header .row {
     max-width: 540px;
 }
 
+.email__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+
 .header__email {
     width: 100%;
     max-width: 350px;
