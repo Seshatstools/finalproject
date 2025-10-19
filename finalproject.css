@@ -433,23 +433,32 @@ FEATURES ↓
    flex-direction: wrap;
    align-items: center;
    text-align: left;
+   padding: 0px 0px, 24px, 0px;
+}
+
+.feature__title {
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .feature__img--container {
     display: flex;
     padding-right: 16px;
-    padding-bottom: 60%;
-    
+    padding-bottom: 48px;
 }
 
 .feature__img--wrapper {
-    height: 60px;
-    width: 60px;
+    height: 52px;
+    width: 52px;
     background-color: #f0f4ff;
     border-radius: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.feature__img {
+    width: 18px;
 }
 
 .feature__para {
@@ -473,7 +482,7 @@ FEATURES ↓
 }
 
 .section__title {
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 900;
     line-height: 1.2;
     text-align: center;
@@ -481,13 +490,13 @@ FEATURES ↓
 }
 
 .section__para {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.6;
     font-weight: 600;
     color: lightslategrey;
-    opacity: 80%;
+    opacity: 50%;
     text-align: center;
-    max-width: 720px;
+    max-width: 440px;
     margin-bottom: 64px;
 }
 
@@ -622,6 +631,11 @@ MOBILE RESPONSIVENESS ↓
         margin-top: 32px;
 }
 
+.feature {
+    width: calc(100% / 2);
+    }
+}
+
 @media (max-width: 1024px) {
 
     .btn__menu {
@@ -630,9 +644,19 @@ MOBILE RESPONSIVENESS ↓
     .header .row {
         flex-direction: column;
         align-items: center;
-        
     }
-    .footer {
+
+        #features .feature {
+    
+    .features {
+        flex-direction: column;
+    }
+    
+    .feature {
+         width: calc(100% / 2);
+    }
+
+         .footer {
         padding: 80px 32px;
     }
 }
@@ -646,7 +670,7 @@ MOBILE RESPONSIVENESS ↓
     }
     
     .feature {
-        width: ;
+         width: calc(100% / 2);
     }
 }
 
@@ -681,5 +705,16 @@ MOBILE RESPONSIVENESS ↓
     .nav__links {
         display: none;
     }
-  
-}
+}@media(max-width: 480px) {
+    .header__description {
+        font-size: 20px;
+    }
+    .header__description--para {
+        font-size: 12px;
+    }
+    .header__input,
+    .header__btn {
+        max-width: 100%;
+    }
+ 
+    }
