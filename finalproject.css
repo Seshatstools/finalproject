@@ -247,6 +247,7 @@ header .row {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    margin: auto;
 }
 
 .header__description {
@@ -284,6 +285,7 @@ header .row {
     justify-content: flex-end;
     align-items: center;
     font-size: 16px;
+    margin: auto;
 }
 
 .header__email--input {
@@ -318,7 +320,6 @@ header .row {
 .header__img {
     height: auto;
     width: 100%;
-    max-width: 540px;
     padding: 16px;
 }
 
@@ -661,10 +662,7 @@ i.fa-brands {
 }
 
 .footer__column--title {
-    display: flex;
-    flex-direction: column;
-    width: calc(100% / 5);
-    align-items: center;    
+  
 }
 
 .footer_columns {
@@ -814,7 +812,6 @@ MOBILE RESPONSIVENESS ↓
     }
     }
 
-}
 
 @media(max-width: 480px) {
     .header__description {
