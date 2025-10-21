@@ -619,8 +619,6 @@ START / CALL TO ACTION ↓
 
 */
 
-
-
 #start .row {
     position: relative;
     overflow: hidden;
@@ -641,6 +639,54 @@ footer {
     position: relative;
     overflow: hidden;
 }
+
+.footer__column--title, 
+h3.footer__logo--text,
+.footer__column--link,
+.footer__copyright,
+.footer__socials,
+.footer__social--link {
+    color: #ffff;
+}
+
+i.fa-brands {
+    color: #ffff;
+    padding: 3px;
+}
+
+.footer__row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer__column--title {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 5);
+    align-items: center;    
+}
+
+.footer_columns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+}
+
+.footer__logo--text {
+    padding-left:-35px;
+}
+
+.footer__logo--img {
+    width: 20px;
+    height: 20px;
+}
+
 
 
 
