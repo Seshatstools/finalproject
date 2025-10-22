@@ -16,7 +16,7 @@ body {
 .row {
     width: 100%;
     max-width: 1280px;
-    margin: 0auto;;         
+    margin: 0 auto;        
 }
 
 
@@ -516,11 +516,11 @@ QUALITY WORK ↓
     display: flex;
     justify-content: space-between;
     align-items: left;
-    width: 100%
-    max-width: 1200px
+    width: 100%;
+    max-width: 1200px;
 }
 
-#quality .section__title .section__para{
+#quality .section__title .section__para {
     text-align: left;
     font-size: 28px;
     max-width: 440px;
@@ -665,9 +665,15 @@ i.fa-brands {
   
 }
 
-.footer_columns {
+.footer__columns {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .footer__bottom {
